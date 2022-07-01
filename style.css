@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap');
+
+:root{
+    --cor01: hsl(172, 67%, 45%);
+    --cor02: hsl(183, 100%, 15%);
+    --cor03: hsl(183, 100%, 15%);
+    --cor04: hsl(186, 14%, 43%);
+    --cor05: hsl(184, 14%, 56%);
+    --cor06: hsl(185, 41%, 84%);
+    --cor07: hsl(189, 41%, 97%);
+    --cor08: hsl(0, 0%, 100%);
+
+    --fonte: font-family: 'Space Mono', monospace;
+}
+
+*{
+    font-family: var(--fonte);
+}
+
+body{
+    margin: 0;
+    background-color: var(--cor06);
+}
+
+header{
+    background-color: var(--cor06);
+    text-align: center;
+    padding: 25px;
+    margin: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 72vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor06);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: var(--cor08);
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.226);
+    margin: 0;
+    width: 70vw;
+    height: 70vh;
+    margin: 20px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.box > .panel{
+    width: 35vw;
+    height: 70vh;
+    border-radius: 15px;
+    background-color: var(--cor03);
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.151);
+    text-align: left;
+}
+
+.panel > p{
+    padding: 25px;
+}
+
+p#valor{
+    text-align: right;
+}
+
+.box > .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px;
+    width: 125px;
+    background-color: var(--cor02);
+    color: var(--cor07);
+    font-size: 24px;
+    text-align: center;
+}
+
+p#canto{
+    
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--cor05);
+}
+
+input{
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 30px;
+    
+}
+
+footer > .attribution{ 
+    font-size: 11px; 
+    text-align: center; 
+    padding: 25px;
+    background-color: var(--cor06);
+}
+
+footer > .attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}

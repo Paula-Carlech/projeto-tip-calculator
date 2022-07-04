@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Arima:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@500&display=swap');
 
 :root{
     --cor01: hsl(172, 67%, 45%);
@@ -11,12 +11,10 @@
     --cor06: hsl(185, 41%, 84%);
     --cor07: hsl(189, 41%, 97%);
     --cor08: hsl(0, 0%, 100%);
-
-    --fonte: font-family: 'Arima', cursive;
 }
 
 *{
-    font-family: var(--fonte);
+    font-family: 'Arima', cursive;;
 }
 
 body{
@@ -74,7 +72,7 @@ header{
     padding-right: 25px;
     margin: 0;
     color: var(--cor08);
-    font-size: 20px;
+    font-size: 15px;
 }
 
 button#reset{
@@ -83,15 +81,33 @@ button#reset{
     width: 400px;
     margin: 25px;
     margin-left: 40px;
+    margin-top: 55px;
 }
 
 p#valor{
     text-align: right;
+    margin-right: 50px;
+    padding: 0;
     color: var(--cor01);
-    font-size: 35px;
+    font-size: 50px;
 }
 
 p#barra{
+    color: var(--cor05);
+    padding: 0;
+    margin-left: 25px;
+}
+
+p#canto{
+    padding: 0;
+    margin: 0;
+    margin-right: 250px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: -25px;
+
+    font-size: 15px;
+    font-weight: 700;
     color: var(--cor05);
 }
 
@@ -111,30 +127,40 @@ button{
     width: 125px;
     background-color: var(--cor02);
     color: var(--cor07);
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
 }
 
-p#canto{
-    
+input#custom{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    width: 105px;
+    height: 32px;
+    background-color: var(--cor02);
+    color: var(--cor07);
     font-size: 20px;
-    font-weight: 700;
-    color: var(--cor05);
+    text-align: center;
+}
+
+input::placeholder{
+    color: var(--cor07);
 }
 
 input{
     background-color: lightgray;
     border: none;
     border-radius: 5px;
-    width: 300px;
+    width: 400px;
     height: 30px;
-    
+    margin-left: -25px;
 }
 
 footer > .attribution{ 
-    font-size: 11px; 
+    font-size: 15px; 
     text-align: center; 
-    padding: 25px;
+    padding: 15px;
     background-color: var(--cor06);
 }
 

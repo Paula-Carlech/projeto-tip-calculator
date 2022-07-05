@@ -84,6 +84,11 @@ button#reset{
     margin-top: 55px;
 }
 
+button#reset:hover{
+    background-color: var(--cor06);
+    color: var(--cor02);
+}
+
 p#valor{
     text-align: right;
     margin-right: 50px;
@@ -131,6 +136,11 @@ button{
     text-align: center;
 }
 
+button:hover{
+    background-color: var(--cor01);
+    color: var(--cor02);
+}
+
 input#custom{
     border: none;
     border-radius: 5px;
@@ -146,6 +156,12 @@ input#custom{
 
 input::placeholder{
     color: var(--cor07);
+}
+
+input#custom:hover{
+    background-color: var(--cor07);
+    color: var(--cor02);
+    border: 2px solid var(--cor01);
 }
 
 input{

@@ -89,7 +89,15 @@ button#reset:hover{
     color: var(--cor02);
 }
 
-p#valor{
+p#valor1{
+    text-align: right;
+    margin-right: 50px;
+    padding: 0;
+    color: var(--cor01);
+    font-size: 50px;
+}
+
+p#valor2{
     text-align: right;
     margin-right: 50px;
     padding: 0;

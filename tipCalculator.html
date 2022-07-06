@@ -17,31 +17,31 @@
         <div class="box">
             <div class="info">
                 <p id="canto">Bill</p>
-                <input type="number">
+                <input type="number" id="bill">
                 
                 <p id="canto">Select Tip %</p>
 
                 <p>
-                    <button>5%</button>
-                    <button>10%</button>
-                    <button>15%</button>
+                    <button onclick="multi05()">5%</button>
+                    <button onclick="multi10()">10%</button>
+                    <button onclick="multi15()">15%</button>
                 </p>
                 <p>
-                    <button>25%</button>
-                    <button>50%</button>
-                    <input id="custom" placeholder="Custom"></input>
+                    <button onclick="multi25()">25%</button>
+                    <button onclick="multi50()">50%</button>
+                    <input id="custom" placeholder="Custom" onclick="custom()"></input>
                 </p>
 
                 <p id="canto">Number of People</p>
-                <input type="number">
+                <input type="number" id="people">
             </div>
             <div class="panel">
                 <p>Tip Amount</p>
                 <p id="barra">/ person</p>
-                <p id="valor">$ 0,00</p>
+                <p id="valor1">$ 0,00</p>
                 <p>Total</p>
                 <p id="barra">/ person</p>
-                <p id="valor">$ 0,00</p>
+                <p id="valor2">$ 0,00</p>
                 <button id="reset">Reset</button>
             </div>
         </div>
@@ -53,5 +53,6 @@
             Coded by <a href="https://github.com/Paula-Carlech">Paula Carlech</a>.
         </div>
     </footer>
+    <script src="tipCalculator.js"></script>
 </body>
 </html>

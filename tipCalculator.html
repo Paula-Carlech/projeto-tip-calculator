@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tip Calculator</title>
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,7 +17,7 @@
         <div class="box">
             <div class="info">
                 <p id="canto">Bill</p>
-                <input type="number" id="bill">
+                <input type="number" name="txtbill" id="bill">
                 
                 <p id="canto">Select Tip %</p>
 
@@ -33,7 +33,7 @@
                 </p>
 
                 <p id="canto">Number of People</p>
-                <input type="number" id="people">
+                <input type="number" name="txtpeople" id="people">
             </div>
             <div class="panel">
                 <p>Tip Amount</p>
@@ -42,7 +42,7 @@
                 <p>Total</p>
                 <p id="barra">/ person</p>
                 <p id="valor2">$ 0,00</p>
-                <button id="reset">Reset</button>
+                <button id="reset" onclick="reset()">Reset</button>
             </div>
         </div>
     </div>
